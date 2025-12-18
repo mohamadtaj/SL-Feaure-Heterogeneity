@@ -22,7 +22,7 @@ method_arg = args["method"]
 n_nodes_arg = args["nodes"]
 overlap_percentage_arg = args["overlap_percentage"]
 
-iterations_val = 2
+iterations_val = 100
 print('____________________________________________________________________________________\n')
 print(f'Starting the simulation for dataset: {data_arg}')
 print(f'Overlap percentage for features: {overlap_percentage_arg}%') # alinged with Jaccard similarity Overlap/100
@@ -72,3 +72,4 @@ if mode_arg == 'overlap':
     main_multi(mode_arg, data_arg, overlap_percentage_arg, oversampling_val, iterations_val, method_arg, n_nodes_arg, results_dir)
 
         
+

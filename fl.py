@@ -33,7 +33,7 @@ class Node:
         self.inference_stats = {'surrogates_used': 0, 'fallbacks_triggered': 0}
         
     def define_rf(self):
-        rf = CustomRandomForestClassifier(feature_names=self.feature_names, n_estimators=10 ,random_state=42, n_jobs=1)
+        rf = CustomRandomForestClassifier(feature_names=self.feature_names, n_estimators=100 ,random_state=42, n_jobs=1)
         self.rf = rf
     
     def train(self, oversampling):
@@ -705,4 +705,5 @@ class Node:
         else:
             return final_prediction
         
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------        
